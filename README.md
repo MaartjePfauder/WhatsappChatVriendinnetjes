@@ -103,7 +103,7 @@ Additionally, a separate CSV file `average_pos_data.csv` contains aggregate stat
 Each row represents one WhatsApp message.
 
 - **MessageID**  
-  ID (auto-increment, starting at 1) of the original text file (`ChatVriendinnetjes.txt`).
+  ID of the original text file (`ChatVriendinnetjes.txt`).
 
 - **Person**  
   The person that sent the message.
