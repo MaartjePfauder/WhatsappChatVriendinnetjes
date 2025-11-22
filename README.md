@@ -24,8 +24,8 @@ The corpus is intended as a small, illustrative dataset for:
 - basic NLP experiments (tokenization, lemmatization, part-of-speech tagging)
 - exploring informal, conversational Dutch
 
-Because this is a private chat between identifiable individuals, the corpus is **not** meant for public distribution or large-scale research.  
-The repository is for course work only.
+Because this is a private chat between identifiable (although anonimized) individuals, the corpus is **not** meant for public distribution or large-scale research.  
+The repository is for course work only. 
 
 ## 3. Text selection criteria
 
@@ -38,6 +38,7 @@ Selection criteria were:
   - Text messages are included.
   - Media was not downloaded
   - WhatsApp placeholders such as "<Media weggelaten>" (media omitted) were excluded from the final `Document` column.
+  - Emoticons are included
 - System messages (e.g. "Messages are end-to-end encrypted", group icon changed, people joined/left) were removed.
 
 ## 4. Data collection process
@@ -63,8 +64,9 @@ The following preprocessing steps were performed in the notebook:
   - sender
   - original message text
 
-- **Removing non-text placeholders**:
+- **Removing unwanted messages**:
   - Messages equal to `<Media weggelaten>` were removed (no textual content).
+  - Messages written by temporary member 'Camille Werk' where removed.
   - Emotions were preserved
 
 ## 6. Annotations and tools
@@ -101,7 +103,7 @@ Additionally, a separate CSV file `average_pos_data.csv` contains aggregate stat
 Each row represents one WhatsApp message.
 
 - **MessageID**  
-  Name of the original text file (`ChatVriendinnetjes.txt`).
+  ID (auto-increment, starting at 1) of the original text file (`ChatVriendinnetjes.txt`).
 
 - **Person**  
   The person that sent the message.
