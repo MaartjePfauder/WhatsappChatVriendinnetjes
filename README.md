@@ -13,8 +13,8 @@ The corpus is derived from a single exported WhatsApp `.txt` file:
 - Language: Mainly Dutch
 - Genre: Informal, conversational, private messaging
 - Time span: 2020–2025
-- number of messages: 33722
-- number of tokens: 275490
+- number of messages: 33757
+- number of tokens: 275488
 
 ## 2. Target audience and intended use
 
