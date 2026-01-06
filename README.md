@@ -24,7 +24,7 @@ The corpus is intended as a small, illustrative dataset for:
 - basic NLP experiments (tokenization, lemmatization, part-of-speech tagging)
 - exploring informal, conversational Dutch
 
-Because this is a private chat between identifiable (although anonimized) individuals, the corpus is **not** meant for public distribution or large-scale research.  
+Because this is a private chat between identifiable (although pseudonymized) individuals, the corpus is **not** meant for public distribution or large-scale research.  
 The repository is for course work only. 
 
 ## 3. Text selection criteria
@@ -114,11 +114,8 @@ Each row represents one WhatsApp message.
 - **Time**  
   The time on which the message was sent.
 
-- **Message** 
-  The content of the message.
-
 - **Doc** 
-  The NLP processed version of the message.
+  The message (NLP processed version)
 
 - **Tokens**  
   Tokenized version of the message as a space-separated string.
